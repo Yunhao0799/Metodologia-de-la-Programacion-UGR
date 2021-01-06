@@ -1,0 +1,8 @@
+g++ -c -o obj/utilidades.o -Iinclude src/utilidades.cpp
+
+g++ -c -o obj/ejercicio1.o -Iinclude src/ejercicio1.cpp
+
+g++ -o bin/ejercicio1 obj/ejercicio1.o obj/utilidades.o
+
+./bin/ejercicio1
+

@@ -1,0 +1,41 @@
+#ifndef CLASS_H
+#define CLASS_H
+
+void printLogo();
+void printLine();
+
+
+class Menu
+{
+    private:
+        char *titulo; //titulo del menu
+        char **opc; //cadenas de longitud variable que describen cada una de las opciones
+        int nopc; //numero de opciones
+        
+    public:
+        //constructor por defecto
+        Menu();
+
+        //destructor
+        ~Menu();
+
+        //constructor de copia
+        Menu( Menu &otra);
+
+        //metodos, setters y getters
+        void setTitulo(char *v);
+
+        int getNumeroOpciones();
+
+        char get_Title(int);
+
+        int title_size();
+
+        char getpos(int, int);
+
+        void print();
+
+        void agregarOpcion(char *);
+};
+
+#endif

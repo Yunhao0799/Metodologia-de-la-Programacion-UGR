@@ -1,0 +1,18 @@
+OBJ=obj
+BIN=bin
+SRC=src
+INC=include
+USRC=utilidades.cpp
+UH=utilidades.h
+
+all:	bin/ejercicio1
+
+$(OBJ)/utilidades.o:	$(SRC)/$(USRC) $(INC)/$(UH)
+	g++ -c -o $(OBJ)/utilidades.o -I$(INC) $(SRC)/$(USRC)
+
+$(OBJ)/ejercicio1.o:	$(SRC)/ejercicio1.cpp $(INC)/$(UH)
+	g++ -c -o $(OBJ)/ejercicio1.o -I$(INC) $(SRC)/ejercicio1.cpp
+
+$(BIN)/ejercicio1:	$(OBJ)/ejercicio1.o $(OBJ)/utilidades.o
+	g++ -c -o $(OBJ)/utilidades.o -I$(INC) $(SRC)/$(USRC)
+

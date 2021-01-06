@@ -1,0 +1,7 @@
+Ejercicio 1 
+	g++ -c -o obj/utilidades.o -Iinclude src/utilidades.cpp
+	"src/utilidades.cpp: In function ‘double mezclar(double*, double, double*, double, double*)’:
+src/utilidades.cpp:23:24: error: invalid types ‘double*[double]’ for array subscript
+       salida[tam_salida] = array2[i];"
+
+
